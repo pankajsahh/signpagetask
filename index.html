@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="manifest" href="image/site.webmanifest" />
     <title>Login</title>
   </head>
   <body>
@@ -20,13 +20,15 @@
         <span>Log In</span>
       </div>
       <div class="Login-form">
-        <label for="email"> Email</label>
-        <input type="email" name="email" placeholder="email" /><br>
-        <label for="password"> Password</label>
-        <input type="password" name="password" placeholder="password" />
-        
+        <label for="username"> Username</label>
+        <input id="Username" type="username" name="username" placeholder="username" />
+        <div id="username_error"></div>
         <br>
-        <button type="submit">Login</button><br>
+        <label for="password"> Password</label>
+        <input id="password" type="password" name="password" placeholder="password" />
+        <div id="password_error"></div>
+        <br>
+        <button onclick="validate()" type="submit">Login</button>
       </div>
         <hr>
         <div class="login_icons">
@@ -36,5 +38,5 @@
         
     </div>
   </body>
-  <script src="login.src"></script>
+  <script src="/login.js"></script>
 </html>
